@@ -15,6 +15,9 @@ body {
   background-color: #f8f9fa;
   z-index: 10;
 }
+* {
+  outline: 1px solid red !important;
+}
 
 #navbar header {
   text-align: center;
