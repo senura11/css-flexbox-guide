@@ -97,8 +97,8 @@ code {
   display: none;
 }
 
-/* --- Media Query (Mobile) --- */
-@media (max-width: 50.9375rem) { /* 815px / 16 (Media Query එකත් rem කිරීමෙන් text zoom කරද්දී layout එක බිඳෙන්නේ නැත) */
+/* --- Media Query (Mobile - Tablet) --- */
+@media (max-width: 50.9375rem) { /* 815px / 16 */
 
   #navbar header {
     border-bottom: none;
@@ -164,5 +164,19 @@ code {
     margin-left: 0;
     padding: 1.25rem; /* 20px / 16 */
     padding-top: 5.625rem; /* 90px / 16 */
+  }
+}
+
+/* --- 💡 අලුත් Media Query එක (Extra Small Mobile - 378px සහ ඊට අඩු) --- */
+@media (max-width: 23.625rem) { /* 378px / 16 */
+  
+  .main-section p {
+    font-size: 0.84375rem; /* අකුරු වල size එක 13.5px දක්වා අඩු කළා */
+  }
+
+  code {
+    font-size: 0.75rem; /* කෝඩ් එකේ අකුරු 12px දක්වා කුඩා කළා */
+    padding: 0.5rem; /* පැතිවල ඉඩ (padding) ටිකක් අඩු කළා */
+    word-break: break-all; /* දිග වැඩි කෝඩ් පේළි ස්ක්‍රීන් එකෙන් පිටතට නොගොස් පහළ පේළියට කැඩී යාමට */
   }
 }
