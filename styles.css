@@ -4,6 +4,9 @@ body {
   padding: 0;
   min-width: 21.875rem; /* 350px / 16 */
 }
+body {
+  overflow-x: hidden;
+}
 
 #navbar {
   position: fixed;
