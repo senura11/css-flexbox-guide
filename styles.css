@@ -2,27 +2,27 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
-  min-width: 350px;
+  min-width: 21.875rem; /* 350px / 16 */
 }
 
 #navbar {
   position: fixed;
-  width: 300px;
+  width: 18.75rem; /* 300px / 16 */
   height: 100%;
   left: 0;
   top: 0;
-  border-right: 2px solid #c5c0be;
+  border-right: 0.125rem solid #c5c0be; /* 2px / 16 */
   background-color: #f8f9fa;
   z-index: 10;
 }
 
 #navbar header {
   text-align: center;
-  margin: 20px 0 0 0;
+  margin: 1.25rem 0 0 0; /* 20px / 16 */
   font-size: 1.8rem;
   font-weight: bold;
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 25px;
+  border-bottom: 0.0625rem solid #ccc; /* 1px / 16 */
+  padding-bottom: 1.5625rem; /* 25px / 16 */
 }
 
 #navbar ul {
@@ -32,12 +32,12 @@ body {
 }
 
 #navbar li {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 0.0625rem solid #ddd; /* 1px / 16 */
 }
 
 #navbar ul a {
   display: block;
-  padding: 15px 20px;
+  padding: 0.9375rem 1.25rem; /* 15px 20px / 16 */
   text-decoration: none;
   text-align: left;
   color: #222;
@@ -46,49 +46,49 @@ body {
 #navbar ul a:hover {
   background-color: #e9ecef;
   color: #000;
-  border-left: 5px solid #c5c0be;
-  padding-left: 15px;
+  border-left: 0.3125rem solid #c5c0be; /* 5px / 16 */
+  padding-left: 0.9375rem; /* 15px / 16 */
   transition: 0.3s;
 }
 
 #main-doc {
-  margin-left: 310px;
-  padding: 40px;
+  margin-left: 19.375rem; /* 310px / 16 */
+  padding: 2.5rem; /* 40px / 16 */
 }
 
 #main-doc .main-section {
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem; /* 40px / 16 */
 }
 
 #main-doc .main-section header {
   font-size: 1.6rem;
   font-weight: bold;
-  margin-bottom: 15px;
+  margin-bottom: 0.9375rem; /* 15px / 16 */
 }
 
 .main-section p {
-  font-size: 15px;
+  font-size: 0.9375rem; /* 15px / 16 */
   line-height: 1.6;
   text-align: left;
-  margin-bottom: 15px;
+  margin-bottom: 0.9375rem; /* 15px / 16 */
   color: #4d4e53;
 }
 
 code {
   background-color: #f4f4f4;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+  border: 0.0625rem solid #ddd; /* 1px / 16 */
+  border-radius: 0.25rem; /* 4px / 16 */
   display: block;
-  padding: 10px;
+  padding: 0.625rem; /* 10px / 16 */
   font-family: monospace;
-  font-size: 13px;
-  margin: 10px 0;
+  font-size: 0.8125rem; /* 13px / 16 */
+  margin: 0.625rem 0; /* 10px 0 / 16 */
 }
 
 .main-section ul {
-  margin-left: 20px;
+  margin-left: 1.25rem; /* 20px / 16 */
   list-style-type: circle;
-  font-size: 15px;
+  font-size: 0.9375rem; /* 15px / 16 */
   color: #4d4e53;
 }
 
@@ -98,37 +98,37 @@ code {
 }
 
 /* --- Media Query (Mobile) --- */
-@media (max-width: 815px) {
+@media (max-width: 50.9375rem) { /* 815px / 16 (Media Query එකත් rem කිරීමෙන් text zoom කරද්දී layout එක බිඳෙන්නේ නැත) */
 
-  #navbar header{
-    border-bottom:none;
-    font-size:1.4rem;
-    text-align:left;
-    margin-top:22px;
-    padding-left:20px;
-    padding-right:60px;
+  #navbar header {
+    border-bottom: none;
+    font-size: 1.4rem;
+    text-align: left;
+    margin-top: 1.375rem; /* 22px / 16 */
+    padding-left: 1.25rem; /* 20px / 16 */
+    padding-right: 3.75rem; /* 60px / 16 */
   }
 
   #navbar {
     width: 100%;
-    height: 70px;
+    height: 4.375rem; /* 70px / 16 */
     border-right: none;
-    border-bottom: 2px solid #c5c0be;
+    border-bottom: 0.125rem solid #c5c0be; /* 2px / 16 */
   }
 
   .hamburger {
     display: flex;
     flex-direction: column;
     position: absolute;
-    right: 20px;
-    top: 20px;
+    right: 1.25rem; /* 20px / 16 */
+    top: 1.25rem; /* 20px / 16 */
     cursor: pointer;
-    gap: 4px;
+    gap: 0.25rem; /* 4px / 16 */
   }
 
   .hamburger div {
-    width: 25px;
-    height: 3px;
+    width: 1.5625rem; /* 25px / 16 */
+    height: 0.1875rem; /* 3px / 16 */
     background-color: #333;
   }
 
@@ -136,33 +136,33 @@ code {
     position: fixed;
     left: 0;
     top: 0;
-    width: 250px;
+    width: 15.625rem; /* 250px / 16 */
     height: 100%;
     background-color: #fff;
     z-index: 100;
     display: flex;
     flex-direction: column;
-    transform: translateX(-100%); /* මෙනු එක හංගනවා */
+    transform: translateX(-100%);
     transition: 0.4s ease;
-    box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0.125rem 0 0.625rem rgba(0,0,0,0.1); /* 2px 0 10px / 16 */
   }
 
   #navbar ul.show {
-    transform: translateX(0); /* මෙනු එක පෙන්නනවා */
+    transform: translateX(0);
   }
 
   .close-btn {
     display: block;
     text-align: right;
-    font-size: 35px;
-    padding: 10px 20px;
+    font-size: 2.1875rem; /* 35px / 16 */
+    padding: 0.625rem 1.25rem; /* 10px 20px / 16 */
     cursor: pointer;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 0.0625rem solid #ddd; /* 1px / 16 */
   }
 
   #main-doc {
     margin-left: 0;
-    padding: 20px;
-    padding-top: 90px; /* Navbar එකට ඉඩ තියන්න */
+    padding: 1.25rem; /* 20px / 16 */
+    padding-top: 5.625rem; /* 90px / 16 */
   }
 }
