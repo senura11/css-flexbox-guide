@@ -79,6 +79,12 @@ code {
   border: 0.0625rem solid #ddd; /* 1px / 16 */
   border-radius: 0.25rem; /* 4px / 16 */
   display: block;
+  
+  /* 💡 මචං, මෙන්න මේ පේළි 3 තමයි අලුතින්ම එකතු කළේ */
+  width: fit-content;      /* ඇතුළේ තියෙන අකුරු ගාණට විතරක් පළල සකසයි */
+  max-width: 100%;         /* කුඩා screen වලදී පිටතට පැනීම වළක්වයි */
+  box-sizing: border-box;  /* padding නිසා පළල වෙනස් වීම පාලනය කරයි */
+  
   padding: 0.625rem; /* 10px / 16 */
   font-family: monospace;
   font-size: 0.8125rem; /* 13px / 16 */
@@ -167,16 +173,16 @@ code {
   }
 }
 
-/* --- 💡 අලුත් Media Query එක (Extra Small Mobile - 378px සහ ඊට අඩු) --- */
+/* --- Media Query (Extra Small Mobile - 378px සහ ඊට අඩු) --- */
 @media (max-width: 23.625rem) { /* 378px / 16 */
   
   .main-section p {
-    font-size: 0.84375rem; /* අකුරු වල size එක 13.5px දක්වා අඩු කළා */
+    font-size: 0.84375rem;
   }
 
   code {
-    font-size: 0.75rem; /* කෝඩ් එකේ අකුරු 12px දක්වා කුඩා කළා */
-    padding: 0.5rem; /* පැතිවල ඉඩ (padding) ටිකක් අඩු කළා */
-    word-break: break-all; /* දිග වැඩි කෝඩ් පේළි ස්ක්‍රීන් එකෙන් පිටතට නොගොස් පහළ පේළියට කැඩී යාමට */
+    font-size: 0.75rem;
+    padding: 0.5rem;
+    word-break: break-all;
   }
 }
